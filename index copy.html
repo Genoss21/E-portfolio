@@ -25,20 +25,20 @@
 <body class="bg-white dark:bg-gray-900">
 
     <!--==================== HEADER ====================-->
-    <header class="lg:border-b-[0.5px] border-gray-200 lg:sticky lg:top-0 md:sticky md:top-0 bottom-0 left-0 sm:fixed sm:bottom-0 sm:left-0 z-10">
-        <nav class="bg-white dark:bg-gray-900 md:top-0 md:relative fixed bottom-0 left-0 w-full"> 
+    <header class="sticky top-0 bg-white dark:bg-gray-900 lg:border-b-[0.5px] border-gray-200 z-10">
+        <nav class=" w-full"> 
             <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4 lg:border-none border-t-[0.5px]">
                 <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <span class="self-center text-xl sm:text-2xl font-semibold whitespace-nowrap text-gray-800 dark:text-white">Fritz</span>
                 </a>
                 <div class="flex gap-2">
                     <div class="hidden lg:flex flex-row font-semibold text-white gap-7 text-center justify-center items-center list-none">
-                        <li><a href="" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Home</a></li>
-                        <li><a href="" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">About</a></li>
-                        <li><a href="" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Skills</a></li>
-                        <li><a href="" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Services</a></li>
-                        <li><a href="" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Portfolio</a></li>
-                        <li><a href="" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Contact me</a></li>
+                        <li><a href="#home" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Home</a></li>
+                        <li><a href="#about" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">About</a></li>
+                        <li><a href="#skills" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Skills</a></li>
+                        <li><a href="#services" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Services</a></li>
+                        <li><a href="#portfolio" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Portfolio</a></li>
+                        <li><a href="#contact" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Contact me</a></li>
                     </div>
             
                     <!-- Group the dark mode button and the toggle button in small screens -->
@@ -53,7 +53,7 @@
                             >
                                 <span class="group inline-flex shrink-0 justify-center items-center w-9 h-9">
                                     <svg
-                                        class="w-6 h-6 -mb-1"
+                                        class="w-6 h-6"
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
                                         stroke="currentColor"
@@ -76,7 +76,7 @@
                             >
                                 <span class="group inline-flex shrink-0 justify-center items-center w-9 h-9">
                                     <svg
-                                        class="w-6 h-6 -mb-1"
+                                        class="w-6 h-6"
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
                                         stroke="currentColor"
@@ -110,21 +110,51 @@
         
         
 
-        <div id="default-modal" class="hidden fixed bottom-0 left-0 right-0 z-50 w-full max-h-full transition-transform transform translate-y-full duration-300 ease-in-out">
+        <div id="default-modal" class="hidden fixed bottom-0 left-0 right-0 z-50 w-full max-h-[400px] transition-transform transform translate-y-full duration-300 ease-in-out">
             <div class="relative w-full max-w-2xl max-h-full">
                 <!-- Modal content -->
-                <div class="relative bg-white rounded-t-lg shadow-sm border border-gray-200">
+                <div id="" class="modal relative bg-white dark:bg-gray-900 rounded-t-lg shadow-sm border border-gray-200">
                     <!-- Modal header -->
                     
                     <!-- Modal body -->
                     <div class="py-4 md:p-5 space-y-4">
-                        <ul class="grid grid-cols-3">
-                            <li class="flex flex-col items-center p-6"><i class="uil uil-estate mb-2 text-xl font-thin"></i>Home</li>
-                            <li class="flex flex-col items-center p-6"><i class="uil uil-user mb-2 text-xl font-thin"></i>About</li>
-                            <li class="flex flex-col items-center p-6"><i class="uil uil-file-alt mb-2 text-xl font-thin"></i>Skills</li>
-                            <li class="flex flex-col items-center p-6"><i class="uil uil-briefcase-alt mb-2 text-xl font-thin"></i>Services</li>
-                            <li class="flex flex-col items-center p-6"><i class="uil uil-scenery mb-2 text-xl font-thin"></i>Portfolio</li>
-                            <li class="flex flex-col items-center p-6"><i class="uil uil-message mb-2 text-xl font-thin"></i>Contact me</li>
+                        <ul class="grid grid-cols-3 text-gray-500 dark:text-gray-200">
+                            <li class="flex flex-col items-center p-4">
+                                <a href="#home" class="flex flex-col items-center">
+                                    <i class="uil uil-estate mb-2 text-xl font-thin"></i>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li class="flex flex-col items-center p-4">
+                                <a href="#about" class="flex flex-col items-center">
+                                    <i class="uil uil-user mb-2 text-xl font-thin"></i>
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li class="flex flex-col items-center p-4">
+                                <a href="#skills" class="flex flex-col items-center">
+                                    <i class="uil uil-file-alt mb-2 text-xl font-thin"></i>
+                                    <span>Skills</span>
+                                </a>
+                            </li>
+                            <li class="flex flex-col items-center p-4">
+                                <a href="#services" class="flex flex-col items-center">
+                                    <i class="uil uil-briefcase-alt mb-2 text-xl font-thin"></i>
+                                    <span>Services</span>
+                                </a>
+                            </li>
+                            <li class="flex flex-col items-center p-4">
+                                <a href="#portfolio" class="flex flex-col items-center">
+                                    <i class="uil uil-scenery mb-2 text-xl font-thin"></i>
+                                    <span>Portfolio</span>
+                                </a>
+                            </li>
+                            <li class="flex flex-col items-center p-4">
+                                <a href="#contact" class="flex flex-col items-center">
+                                    <i class="uil uil-message mb-2 text-xl font-thin"></i>
+                                    <span>Contact me</span>
+                                </a>
+                            </li></a></li></a></li>
                         </ul>
                     </div>
                     <!-- Modal footer -->
@@ -144,7 +174,7 @@
     <!--==================== MAIN ====================-->
     <main class="items-center justify-between mx-auto p-4 -mt-20">
         <!--==================== HOME ====================-->
-        <section class="h-screen flex items-center justify-center">
+        <section id="home" class="h-screen flex items-center justify-center">
             <div class="max-w-screen-2xl p-4 mx-auto">
                 <div class="flex lg:flex-row flex-col lg:gap-8 xl:gap-0 lg:flex">
                     <!-- Social Icons - Always on the left -->
@@ -217,7 +247,7 @@
         
 
         <!--==================== ABOUT ====================-->
-        <section class="h-screen flex items-center justify-center lg:pt-[140px] py-16">
+        <section id="about" class="h-screen flex items-center justify-center lg:pt-[140px] pt-28">
             <div class="text-center">
                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                     About Me
@@ -228,27 +258,26 @@
                 <div class="max-w-screen-2xl px-4 py-8 mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between lg:px-32 lg:py-16">
                     <!--Image-->
                     <div class="flex justify-center lg:w-5/12 lg:pb-0 pb-8">
-                        <img src="assets/img/1.png" alt="mockup" class="border rounded-2xl shadow-2xl lg:w-[90%] w-[70%] h-auto">
+                        <img src="assets/img/1.png" alt="mockup" class="border rounded-2xl shadow-2xl lg:w-[90%] w-[60%] h-auto">
                     </div>
                     <div class="mr-auto place-self-center lg:w-7/12 lg:px-32 px-0">
                         <!-- Text and Stats Section -->
                         <div class="flex-1 flex flex-col space-y-8 lg:space-y-16">
                             <!-- Text Section -->
-                            <p class="mb-6 font-light lg:text-left text-gray-500 lg:text-xl text-base dark:text-gray-400">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates totam dolorem aut molestias aspernatur iste laborum odio! Vitae quidem eveniet ratione quia aspernatur sed dignissimos!
-                            </p>
+                            <p class="mb-4 font-light lg:text-left text-gray-500 lg:text-xl text-base dark:text-gray-400 ">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem quos nulla. Aperiam ratione odit sit ipsa velit nobis quis quas voluptas nesciunt expedita. In impedit distinctio dolorem cumque non illum sunt quas iste delectus.                            </p>
                             <!-- Stats Section -->
                             <div class="flex justify-between text-gray-900 dark:text-gray-200 text-center">
                                 <div class="flex flex-col items-center">
-                                    <h1 class="text-4xl font-semibold">5+</h1>
+                                    <h1 class="lg:text-4xl text-2xl font-semibold">5+</h1>
                                     <p class="lg:text-xl text-base font-light leading-tight">Years<br>Experience</p>
                                 </div>
                                 <div class="flex flex-col items-center">
-                                    <h1 class="text-4xl font-semibold">50+</h1>
+                                    <h1 class="lg:text-4xl text-2xl font-semibold">50+</h1>
                                     <p class="lg:text-xl text-base font-light leading-tight">Completed<br>Projects</p>
                                 </div>
                                 <div class="flex flex-col items-center">
-                                    <h1 class="text-4xl font-semibold">10+</h1>
+                                    <h1 class="lg:text-4xl text-2xl font-semibold">10+</h1>
                                     <p class="lg:text-xl text-base font-light leading-tight">Companies<br>Worked</p>
                                 </div>
                             </div>
@@ -266,7 +295,7 @@
         </section>
         
         <!--==================== SKILLS ====================-->
-        <section class="h-screen flex items-center justify-center lg:pt-[140px] py-16">
+        <section id="skills" class="h-screen flex flex-col bg-white dark:bg-gray-900 items-center justify-center lg:pt-[140px] px-4 py-16 w-full transition-colors duration-500 ease-in-out">
             <div class="text-center">
                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                     Skills
@@ -274,39 +303,117 @@
                 <p class="mb-6 text-base font-light text-gray-500 lg:text-xl dark:text-gray-400">
                     My technical level
                 </p>
-                <div class="max-w-screen-2xl px-4 py-8 mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between lg:px-32 lg:py-16">
-                    <!--Image-->
-                    <div class="flex justify-center lg:w-5/12 lg:pb-0 pb-8">
-                        <img src="assets/img/1.png" alt="mockup" class="border rounded-2xl shadow-2xl lg:w-[90%] w-[70%] h-auto">
-                    </div>
-                    <div class="mr-auto place-self-center lg:w-7/12 lg:px-32 px-0">
-                        <!-- Text and Stats Section -->
-                        <div class="flex-1 flex flex-col space-y-8 lg:space-y-16">
-                            <!-- Text Section -->
-                            <p class="mb-6 font-light lg:text-left text-gray-500 lg:text-xl text-base dark:text-gray-400">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates totam dolorem aut molestias aspernatur iste laborum odio! Vitae quidem eveniet ratione quia aspernatur sed dignissimos!
-                            </p>
-                            <!-- Stats Section -->
-                            <div class="flex justify-between text-gray-900 dark:text-gray-200 text-center">
-                                <div class="flex flex-col items-center">
-                                    <h1 class="text-4xl font-semibold">5+</h1>
-                                    <p class="lg:text-xl text-base font-light leading-tight">Years<br>Experience</p>
+                <div class="max-w-screen-2xl py-8 mx-auto flex flex-col flex-wrap gap-8 lg:flex-row lg:items-center lg:justify-between">
+                    <div id="accordion-flush" data-accordion="collapse" data-active-classes="text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+                        <h2 id="accordion-flush-heading-1">
+                            <button type="button" class="flex items-center justify-between lg:w-[1000px] w-[340px] py-6 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                                <div class="flex flex-row items-center">
+                                    <i class="uil uil-brackets-curly lg:text-5xl text-3xl"></i>
+                                    <div class="ml-4">
+                                        <h1 class="lg:text-4xl sm:text-2xl">Frontend Development</h1>
+                                        <p class="lg:text-base sm:text-xs font-thin">More than a year experience</p>
+                                    </div>
                                 </div>
-                                <div class="flex flex-col items-center">
-                                    <h1 class="text-4xl font-semibold">50+</h1>
-                                    <p class="lg:text-xl text-base font-light leading-tight">Completed<br>Projects</p>
+                                <i class="uil uil-angle-down lg:text-4xl text-2xl"></i>
+                            </button>
+                        </h2>
+                        <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                                <div class="flex justify-between mb-4">
+                                    <span class="text-base font-medium text-blue-700 dark:text-white">HTML</span>
+                                    <span class="text-sm font-medium text-blue-700 dark:text-white">90%</span>
                                 </div>
-                                <div class="flex flex-col items-center">
-                                    <h1 class="text-4xl font-semibold">10+</h1>
-                                    <p class="lg:text-xl text-base font-light leading-tight">Companies<br>Worked</p>
+                                <div class="w-full rounded-full h-2.5">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                                </div>
+                                <div class="flex justify-between mb-4 mt-4">
+                                    <span class="text-base font-medium text-blue-700 dark:text-white">CSS</span>
+                                    <span class="text-sm font-medium text-blue-700 dark:text-white">80%</span>
+                                </div>
+                                <div class="w-full rounded-full h-2.5">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                                </div>
+                                <div class="flex justify-between mb-4 mt-4">
+                                    <span class="text-base font-medium text-blue-700 dark:text-white">JavaScript</span>
+                                    <span class="text-sm font-medium text-blue-700 dark:text-white">70%</span>
+                                </div>
+                                <div class="w-full rounded-full h-2.5">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
                                 </div>
                             </div>
-                            <!-- Button Section -->
-                            <div class="flex justify-center lg:justify-start gap-3">
-                                <button class="inline-flex items-center justify-center font-semibold px-5 py-3 text-base text-white dark:text-gray-200 rounded-lg bg-gray-500 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-900">
-                                    <span class="text-base pr-2">Download CV</span>
-                                    <i class="uil uil-download-alt"></i>
-                                </button>
+                        </div>
+                        <h2 id="accordion-flush-heading-2">
+                            <button type="button" class="flex items-center justify-between lg:w-[1000px] w-[340px] py-6 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                                <div class="flex flex-row items-center">
+                                    <i class="uil uil-server-network lg:text-5xl text-3xl"></i>
+                                    <div class="ml-4">
+                                        <h1 class="lg:text-4xl sm:text-2xl">Backend Development</h1>
+                                        <p class="text-base font-thin">More than a year experience</p>
+                                    </div>
+                                </div>
+                                <i class="uil uil-angle-down lg:text-4xl text-2xl"></i>
+                            </button>
+                        </h2>
+                        <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                            <div class="py-6 border-b border-gray-200 dark:border-gray-700">
+                                <div class="flex justify-between mb-4">
+                                    <span class="text-base font-medium text-blue-700 dark:text-white">Node.js</span>
+                                    <span class="text-sm font-medium text-blue-700 dark:text-white">75%</span>
+                                </div>
+                                <div class="w-full rounded-full h-2.5">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+                                </div>
+                                <div class="flex justify-between mb-4 mt-4">
+                                    <span class="text-base font-medium text-blue-700 dark:text-white">Express.js</span>
+                                    <span class="text-sm font-medium text-blue-700 dark:text-white">70%</span>
+                                </div>
+                                <div class="w-full rounded-full h-2.5">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+                                </div>
+                                <div class="flex justify-between mb-4 mt-4">
+                                    <span class="text-base font-medium text-blue-700 dark:text-white">MongoDB</span>
+                                    <span class="text-sm font-medium text-blue-700 dark:text-white">65%</span>
+                                </div>
+                                <div class="w-full rounded-full h-2.5">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="accordion-flush-heading-3">
+                            <button type="button" class="flex items-center justify-between lg:w-[1000px] w-[340px] py-6 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                                <div class="flex flex-row items-center">
+                                    <i class="uil uil-swatchbook lg:text-5xl text-3xl"></i>
+                                    <div class="ml-4">
+                                        <h1 class="lg:text-4xl sm:text-2xl">Designer</h1>
+                                        <p class="text-base font-thin">More than a year experience</p>
+                                    </div>
+                                </div>
+                                <i class="uil uil-angle-down lg:text-4xl text-2xl"></i>
+                            </button>
+                        </h2>
+                        <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                            <div class="py-6 border-b border-gray-200 dark:border-gray-700">
+                                <div class="flex justify-between mb-4">
+                                    <span class="text-base font-medium text-blue-700 dark:text-white">Git</span>
+                                    <span class="text-sm font-medium text-blue-700 dark:text-white">85%</span>
+                                </div>
+                                <div class="w-full rounded-full h-2.5">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+                                </div>
+                                <div class="flex justify-between mb-4 mt-4">
+                                    <span class="text-base font-medium text-blue-700 dark:text-white">Docker</span>
+                                    <span class="text-sm font-medium text-blue-700 dark:text-white">60%</span>
+                                </div>
+                                <div class="w-full rounded-full h-2.5">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+                                </div>
+                                <div class="flex justify-between mb-4 mt-4">
+                                    <span class="text-base font-medium text-blue-700 dark:text-white">AWS</span>
+                                    <span class="text-sm font-medium text-blue-700 dark:text-white">55%</span>
+                                </div>
+                                <div class="w-full rounded-full h-2.5">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 55%"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

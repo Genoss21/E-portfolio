@@ -1,265 +1,162 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<html lang="en" transition: background-color 0.5s ease, color 0.5s ease;
+>
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./assets/css/input.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-        <!--==================== UNICONS ====================-->
-        
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="">
-            <nav class="bg-white border-gray-200 dark:bg-gray-900 md:top-0 md:relative fixed bottom-0 left-0 w-full">
-                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
-                        <span class="self-center text-2xl sm:text-xl font-semibold whitespace-nowrap text-[#333333] dark:text-white">Fritz</span>
-                    </a>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        // Apply dark mode before the page loads to prevent flickering
+        if (localStorage.getItem("darkMode") === "enabled") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      </script>
+
     
-                    <div class="hidden w-full md:block md:w-auto">
-                        <ul class="flex flex-row text-white gap-7 text-center justify-center items-center">
-                            <li class="text-[#333333] dark:text-white">Home</li>
-                            <li class="text-[#333333] dark:text-white">About</li>
-                            <li class="text-[#333333] dark:text-white">Skills</li>
-                            <li class="text-[#333333] dark:text-white">Services</li>
-                            <li class="text-[#333333] dark:text-white">Portfolio</li>
-                            <li class="text-[#333333] dark:text-white">Contact me</li>
-                            <li class="flex items-center">
-                                <!-- Dark Mode Toggle Buttons (fixed at the top-right corner) -->
-                                <div class="flex items-center">
-                                    <!-- Button to enable dark mode -->
-                                    <button
-                                    id="enable-dark"
-                                    type="button"
-                                    class="block dark:hidden hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200"
-                                    data-hs-theme-click-value="dark"
-                                    >
-                                    <span class="group inline-flex shrink-0 justify-center items-center w-9 h-9">
-                                        <svg
-                                        class="w-4 h-4"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        viewBox="0 0 24 24"
-                                        >
-                                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-                                        </svg>
-                                    </span>
-                                    </button>
-                                    <!-- Button to disable dark mode -->
-                                    <button
-                                    id="disable-dark"
-                                    type="button"
-                                    class="hidden dark:block hs-dark-mode font-medium text-gray-200 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200"
-                                    data-hs-theme-click-value="light"
-                                    >
-                                    <span class="group inline-flex shrink-0 justify-center items-center w-9 h-9">
-                                        <svg
-                                        class="w-4 h-4"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        viewBox="0 0 24 24"
-                                        >
-                                        <circle cx="12" cy="12" r="4"></circle>
-                                        <path d="M12 2v2"></path>
-                                        <path d="M12 20v2"></path>
-                                        <path d="m4.93 4.93 1.41 1.41"></path>
-                                        <path d="m17.66 17.66 1.41 1.41"></path>
-                                        <path d="M2 12h2"></path>
-                                        <path d="M20 12h2"></path>
-                                        <path d="m6.34 17.66-1.41 1.41"></path>
-                                        <path d="m19.07 4.93-1.41 1.41"></path>
-                                        </svg>
-                                    </span>
-                                    </button>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <button onclick="toggleModal()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                        <i class="uil uil-apps text-2xl sm:text-xl"></i>
+    <title>Document</title>
+</head>
+<body class="bg-white dark:bg-gray-900">
+
+    <!--==================== HEADER ====================-->
+    <header class="lg:border-b-[0.5px] border-gray-200 z-10">
+        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Fritz</span>
+                </a>
+                <div class="flex">
+                    <!-- Button to enable dark mode -->
+                    <button
+                        id="enable-dark"
+                        type="button"
+                        class="block dark:hidden hs-dark-mode font-medium text-gray-500 rounded-full hover:text-gray-800"
+                        data-hs-theme-click-value="dark"
+                    >
+                        <span class="group inline-flex shrink-0 justify-center items-center w-9 h-9">
+                            <svg
+                                class="w-6 h-6"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                viewBox="0 0 24 24"
+                            >
+                                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                            </svg>
+                        </span>
+                    </button>
+    
+                    <!-- Button to disable dark mode -->
+                    <button
+                        id="disable-dark"
+                        type="button"
+                        class="hidden dark:block hs-dark-mode font-medium text-gray-400 rounded-full hover:text-white"
+                        data-hs-theme-click-value="light"
+                    >
+                        <span class="group inline-flex shrink-0 justify-center items-center w-9 h-9">
+                            <svg
+                                class="w-6 h-6"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                viewBox="0 0 24 24"
+                            >
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <path d="M12 2v2"></path>
+                                <path d="M12 20v2"></path>
+                                <path d="m4.93 4.93 1.41 1.41"></path>
+                                <path d="m17.66 17.66 1.41 1.41"></path>
+                                <path d="M2 12h2"></path>
+                                <path d="M20 12h2"></path>
+                                <path d="m6.34 17.66-1.41 1.41"></path>
+                                <path d="m19.07 4.93-1.41 1.41"></path>
+                            </svg>
+                        </span>
                     </button>
                 </div>
-            </nav>
-    
-            <div id="default-modal" class="hidden fixed bottom-0 left-0 right-0 z-50 w-full max-h-full transition-transform transform translate-y-full duration-300 ease-in-out">
-                <div class="relative w-full max-w-2xl max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-t-lg shadow-sm border border-gray-200">
-                        <!-- Modal header -->
-                        
-                        <!-- Modal body -->
-                        <div class="py-4 md:p-5 space-y-4">
-                            <ul class="grid grid-cols-3">
-                                <li class="flex flex-col items-center p-6"><i class="uil uil-estate mb-2 text-xl font-thin"></i>Home</li>
-                                <li class="flex flex-col items-center p-6"><i class="uil uil-user mb-2 text-xl font-thin"></i>About</li>
-                                <li class="flex flex-col items-center p-6"><i class="uil uil-file-alt mb-2 text-xl font-thin"></i>Skills</li>
-                                <li class="flex flex-col items-center p-6"><i class="uil uil-briefcase-alt mb-2 text-xl font-thin"></i>Services</li>
-                                <li class="flex flex-col items-center p-6"><i class="uil uil-scenery mb-2 text-xl font-thin"></i>Portfolio</li>
-                                <li class="flex flex-col items-center p-6"><i class="uil uil-message mb-2 text-xl font-thin"></i>Contact me</li>
-                            </ul>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center justify-between p-4 md:p-5 border-b border-gray-200">
-                            <button 
-                                onclick="toggleModal()" 
-                                type="button" 
-                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center transition-transform transform active:scale-90 duration-300 ease-in-out">
-                                <i class="uil uil-times text-2xl sm:text-xl"></i>
-                            </button>
-                        </div>                
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <i class="uil uil-apps text-2xl sm:text-xl"></i>
+                </button>
+                <div class="w-full md:block md:w-auto" >
+                    <div class="hidden lg:flex flex-row font-semibold text-white gap-7 text-center justify-center items-center list-none" id="navbar-default">
+                        <li><a href="#home" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Home</a></li>
+                        <li><a href="#about" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">About</a></li>
+                        <li><a href="#skills" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Skills</a></li>
+                        <li><a href="#services" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Services</a></li>
+                        <li><a href="#portfolio" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Portfolio</a></li>
+                        <li><a href="#contact" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Contact me</a></li>
                     </div>
                 </div>
             </div>
-        </header>
+        </nav>
+    </header>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section h-screen " id="home">
-                <div class="flex flex-row max-w-screen-xl px-4 py-8 mx-auto">
-                    <div class="">
-                        <div class="lg:flex flex-col items-start gap-4 justify-baseline lg:col-span-1">
-                            <a href="https://www.linkedin.com/in/fritz-jerome-tobes-a13127263/" class="text-gray-500 hover:text-primary-700">
-                                <i class="uil uil-linkedin-alt lg:text-2xl sm:text-lg"></i>
-                            </a>
-                            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="text-gray-500 hover:text-primary-700">
-                                <i class="uil uil-facebook lg:text-2xl sm:text-lg"></i>
-                            </a>
-                            <a href="https://github.com/Genoss21" class="text-gray-500 hover:text-primary-700">
-                                <i class="uil uil-github-alt lg:text-2xl sm:text-lg"></i>
-                            </a>
-                        </div>
-    
-                        <!-- Image Section - Always at the end of the grid -->
-                        <div class="lg:hidden lg: lg:justify-end sm:col-span-2">
-                            <img src="assets/img/Profile.png" 
-                                alt="mockup" class="max-w-full md:max-w-xs lg:max-w-full profile1">
-                        </div>
-    
-                    </div>
-
-                    <div class="mr-auto place-self-center lg:flex flex-col">
-                        <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-[#333333] dark:text-white">
-                            Hi, I am Fritz
-                        </h1>
-                        <p class="max-w-2xl mb-6 font-extrabold text-gray-500 lg:mb-8 md:text-5xl xl:text-6xl dark:text-gray-400">
-                            Software Quality Assurance Engineer/ Web Developer
-                        </p>
-                        <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg xl:text-xl dark:text-gray-400">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi enim in voluptate ex doloribus labore id, quas cum, suscipit quidem minus sapiente iste recusandae.
-                        </p>
-                        <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                            Get started
-                            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <!-- Text and Stats Section -->
-                <div class="flex-1 flex flex-col space-y-8 lg:space-y-16">
-                    <!-- Text Section -->
-                    <p class="mb-6 font-light text-gray-500 lg:text-xl text-base dark:text-gray-400">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates totam dolorem aut molestias aspernatur iste laborum odio! Vitae quidem eveniet ratione quia aspernatur sed dignissimos!
-                    </p>
+    <!--==================== MAIN ====================-->
+    <main class="items-center justify-between mx-auto p-4 -mt-20">
+        <!--==================== HOME ====================-->
+        <section id="home" class="">
             
-                    <!-- Stats Section -->
-                    <div class="flex justify-between text-gray-900 dark:text-gray-200 text-center">
-                        <div class="flex flex-col items-center">
-                            <h1 class="text-4xl font-semibold">5+</h1>
-                            <p class="lg:text-xl text-base font-light leading-tight">Years<br>Experience</p>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <h1 class="text-4xl font-semibold">50+</h1>
-                            <p class="lg:text-xl text-base font-light leading-tight">Completed<br>Projects</p>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <h1 class="text-4xl font-semibold">10+</h1>
-                            <p class="lg:text-xl text-base font-light leading-tight">Companies<br>Worked</p>
-                        </div>
-                    </div>
-            
-                    <!-- Button Section -->
-                    <div class="flex gap-3">
-                        <button class="inline-flex items-center justify-center font-semibold px-5 py-3 text-base text-white dark:text-gray-200 rounded-lg bg-gray-500 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-900">
-                            <span class="text-base pr-2">Download CV</span>
-                            <i class="uil uil-download-alt"></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
-
-            </section>
-
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
-
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
+        </section>
         
 
-        <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <!--==================== ABOUT ====================-->
+        <section id="about" class="">
+            
+        </section>
+        
+        <!--==================== SKILLS ====================-->
+        <section id="skills" class="">
+            
+        </section>
 
-        <!--==================== MAIN JS ====================-->
-        <script src=""></script>
-    </body>
+        <!--==================== QUALIFICATION ====================-->
+        <section>
+
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section>
+            
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section>
+            
+        </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section>
+
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section>
+            
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section>
+
+        </section>
+    </main>
+    
+    
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+   
+</body>
 </html>
