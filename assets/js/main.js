@@ -80,3 +80,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { passive: false });
 });
+
+// Add shadow to header on scroll with smooth transition
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('header');
+  if (window.scrollY > 0) {
+    header.classList.add('shadow-lg', 'transition-shadow', 'duration-300');
+  } else {
+    header.classList.remove('shadow-lg', 'transition-shadow', 'duration-300');
+  }
+});
