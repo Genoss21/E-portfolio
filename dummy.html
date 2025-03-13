@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Sticky Navbar -->
+    <header class="sticky top-0 bg-white dark:bg-gray-900  z-10 -mb-20">
+        <nav class=" w-full"> 
+            <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4 lg:border-none border-t-[0.5px]">
+                <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="self-center text-xl font-semibold whitespace-nowrap text-gray-800 dark:text-white">Fritz Jerome</span>
+                </a>
+                <div class="flex gap-2">
+                    <div class="hidden lg:flex flex-row font-normal text-white gap-7 text-center justify-center items-center list-none">
+                        <li><a href="#home" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Home</a></li>
+                        <li><a href="#about" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">About</a></li>
+                        <li><a href="#skills" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Skills</a></li>
+                        <li><a href="#services" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Services</a></li>
+                        <li><a href="#portfolio" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Portfolio</a></li>
+                        <li><a href="#contact" class="text-base text-gray-500 dark:text-gray-200 hover:text-gray-800">Contact me</a></li>
+                    </div>
+            
+                    <!-- Group the dark mode button and the toggle button in small screens -->
+                    <div class="flex items-center gap-2">
+                        <div class="flex">
+                            <!-- Button to enable dark mode -->
+                            <button
+                                id="enable-dark"
+                                type="button"
+                                class="block dark:hidden hs-dark-mode font-medium text-gray-500 rounded-full hover:text-gray-800"
+                                data-hs-theme-click-value="dark"
+                            >
+                                <span class="group inline-flex shrink-0 justify-center items-center w-9 h-9">
+                                    <svg
+                                        class="w-6 h-6"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                                    </svg>
+                                </span>
+                            </button>
+            
+                            <!-- Button to disable dark mode -->
+                            <button
+                                id="disable-dark"
+                                type="button"
+                                class="hidden dark:block hs-dark-mode font-medium text-gray-400 rounded-full hover:text-white"
+                                data-hs-theme-click-value="light"
+                            >
+                                <span class="group inline-flex shrink-0 justify-center items-center w-9 h-9">
+                                    <svg
+                                        class="w-6 h-6"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <circle cx="12" cy="12" r="4"></circle>
+                                        <path d="M12 2v2"></path>
+                                        <path d="M12 20v2"></path>
+                                        <path d="m4.93 4.93 1.41 1.41"></path>
+                                        <path d="m17.66 17.66 1.41 1.41"></path>
+                                        <path d="M2 12h2"></path>
+                                        <path d="M20 12h2"></path>
+                                        <path d="m6.34 17.66-1.41 1.41"></path>
+                                        <path d="m19.07 4.93-1.41 1.41"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+            
+                        <!-- Toggle button -->
+                        <button onclick="toggleModal()" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                            <i class="uil uil-apps text-2xl sm:text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        
+
+        <div id="default-modal" class="hidden fixed bottom-0 left-0 right-0 z-50 w-full max-h-[400px] transition-transform transform translate-y-full duration-300 ease-in-out">
+            <div class="relative w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div id="" class="modal relative bg-white dark:bg-gray-900 rounded-t-lg border-t-2 border-gray-200">
+                    <!-- Modal header -->
+                    
+                    <!-- Modal body -->
+                    <div class="py-4 md:p-5 space-y-4">
+                        <ul class="grid grid-cols-3 text-gray-500 dark:text-gray-200">
+                            <li class="flex flex-col items-center p-4">
+                                <a href="#home" class="flex flex-col items-center">
+                                    <i class="uil uil-estate mb-2 text-xl font-thin"></i>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li class="flex flex-col items-center p-4">
+                                <a href="#about" class="flex flex-col items-center">
+                                    <i class="uil uil-user mb-2 text-xl font-thin"></i>
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li class="flex flex-col items-center p-4">
+                                <a href="#skills" class="flex flex-col items-center">
+                                    <i class="uil uil-file-alt mb-2 text-xl font-thin"></i>
+                                    <span>Skills</span>
+                                </a>
+                            </li>
+                            <li class="flex flex-col items-center p-4">
+                                <a href="#services" class="flex flex-col items-center">
+                                    <i class="uil uil-briefcase-alt mb-2 text-xl font-thin"></i>
+                                    <span>Services</span>
+                                </a>
+                            </li>
+                            <li class="flex flex-col items-center p-4">
+                                <a href="#portfolio" class="flex flex-col items-center">
+                                    <i class="uil uil-scenery mb-2 text-xl font-thin"></i>
+                                    <span>Portfolio</span>
+                                </a>
+                            </li>
+                            <li class="flex flex-col items-center p-4">
+                                <a href="#contact" class="flex flex-col items-center">
+                                    <i class="uil uil-message mb-2 text-xl font-thin"></i>
+                                    <span>Contact me</span>
+                                </a>
+                            </li></a></li></a></li>
+                        </ul>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center justify-between p-4 md:p-5 border-b border-gray-200">
+                        <button 
+                            onclick="toggleModal()" 
+                            type="button" 
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-800 rounded-lg w-8 h-8 ms-auto inline-flex justify-center items-center transition-transform transform active:scale-90 duration-300 ease-in-out">
+                            <i class="uil uil-times text-2xl sm:text-xl"></i>
+                        </button>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <main class="">
+        <!--==================== HOME ====================-->
+        <section id="home" class="h-screen flex items-center justify-center">
+            <div class="max-w-screen-2xl p-4 mx-auto flex flex-col lg:grid lg:grid-cols-14 gap-4">
+                <!-- First Column -->
+                <div class="col-span-1 order-1 lg:order-none">
+                    <div class="relative flex flex-row h-full">
+                        <div class="lg:pr-4 lg:pt-16 flex flex-col items-center justify-center lg:gap-8 gap-6 py-16 lg:h-full lg:w-full">
+                            <a href="https://www.linkedin.com/in/fritz-jerome-tobes-a13127263/" class="text-gray-500 hover:text-gray-800">
+                                <i class="uil uil-linkedin-alt lg:text-2xl sm:text-lg"></i>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="text-gray-500 hover:text-gray-800">
+                                <i class="uil uil-facebook lg:text-2xl sm:text-lg"></i>
+                            </a>
+                            <a href="https://github.com/Genoss21" class="text-gray-500 hover:text-gray-800">
+                                <i class="uil uil-github-alt lg:text-2xl sm:text-lg"></i>
+                            </a>
+                        </div>
+                        <div class="sm:hidden absolute top-0 left-9 w-[250px] h-auto justify-center item one">
+                            <img src="assets/img/DP.jpg" alt="" class="object-cover w-[60%] h-auto">
+                        </div>
+                    </div>
+                </div>                
+
+                <!-- Columns 2 to 6 -->
+                <div class="col-span-5 order-3 lg:order-none">
+                    <div class="mr-auto place-self-center lg:flex flex-col">
+                        <div class="relative flex-row justify-center lg:pt-20 pt-0">
+                            <h1 class="max-w-2xl lg:mb-6 mb-2 text-3xl font-semibold tracking-tight leading-none md:text-4xl lg:text-6xl text-gray-800 dark:text-white">
+                                Hi, I am Fritz
+                            </h1>
+                            <p class="max-w-2xl mb-6 font-semibold text-gray-500 lg:mb-6 dark:text-gray-400 lg:text-4xl md:text-3xl text-2xl">
+                                Software Quality Assurance Engineer/ Web Developer
+                            </p>
+                            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-6 dark:text-gray-400 lg:text-base text-sm">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. At quasi enim in voluptate ex doloribus labore id, quas cum, suscipit quidem minus sapiente iste recusandae.
+                            </p>
+                            <a href="#" class="inline-flex items-center justify-center px-5 py-3 mb-6 text-base text-center text-white dark:text-gray-200 rounded-lg bg-gray-500 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-900">
+                                <span class="text-base pr-2">Contact me</span>
+                                <i class="uil uil-message"></i>
+                            </a>
+                            <div class="flex flex-wrap gap-2 text-base">
+                                <p class="lg:px-4 lg:py-2 px-3 py-1 border border-gray-500 text-gray-800 dark:text-gray-200 rounded-lg lg:text-base text-sm font-light">UI/UX Design</p>
+                                <p class="lg:px-4 lg:py-2 px-3 py-1 border border-gray-500 text-gray-800 dark:text-gray-200 rounded-lg lg:text-base text-sm font-light">Web Development</p>
+                                <p class="lg:px-4 lg:py-2 px-3 py-1 border border-gray-500 text-gray-800 dark:text-gray-200 rounded-lg lg:text-base text-sm font-light">Automation Testing</p>
+                                <p class="lg:px-4 lg:py-2 px-3 py-1 border border-gray-500 text-gray-800 dark:text-gray-200 rounded-lg lg:text-base text-sm font-light">C programming</p>
+                                <p class="lg:px-4 lg:py-2 px-3 py-1 border border-gray-500 text-gray-800 dark:text-gray-200 rounded-lg lg:text-base text-sm font-light">WinsAMS</p>
+                                <p class="lg:px-4 lg:py-2 px-3 py-1 border border-gray-500 text-gray-800 dark:text-gray-200 rounded-lg lg:text-base text-sm font-light">Hew</p>
+                                <p class="lg:px-4 lg:py-2 px-3 py-1 border border-gray-500 text-gray-800 dark:text-gray-200 rounded-lg lg:text-base text-sm font-light">Unit Testing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden lg:flex absolute bottom-24 left-2/6 transform ">
+                        <a href="#" class="inline-flex items-center justify-center font-medium text-center text-gray-900 dark:text-gray-200">
+                            <i class="uil uil-mouse-alt text-2xl pr-1"></i>
+                            <span class="text-base">Scroll down</span>
+                            <i class="uil uil-arrow-down text-2xl pl-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columns 9 to 13 -->
+                <div class="col-span-5 col-start-9 order-2 lg:order-none flex justify-center items-center">
+                    <div class="hidden lg:flex item one">
+                        <img src="assets/img/DP.jpg" alt="" class="object-cover w-[80%] h-auto shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
