@@ -176,7 +176,7 @@
     <main class="items-center justify-between mx-auto px-4">
         <!--==================== HOME ====================-->
         <section id="home" class="h-screen flex items-center justify-center pt-20">
-            <div class="max-w-screen-2xl p-4 mx-auto flex flex-col lg:grid lg:grid-cols-14 gap-4">
+            <div class="max-w-screen-2xl p-4 mx-auto flex flex-col lg:grid lg:grid-cols-14 lg:gap-4 gap-0">
                 <!-- First Column -->
                 <div class="col-span-1 order-1 lg:order-none">
                     <div class="relative flex flex-row h-full">
@@ -195,12 +195,12 @@
                             <img src="assets/img/DP.jpg" alt="" class="object-cover w-[60%] h-auto">
                         </div>
                     </div>
-                </div>                
-
+                </div>
+                
                 <!-- Columns 2 to 6 -->
-                <div class="col-span-5 order-3 lg:order-none">
+                <div class="col-span-5 order-3 lg:order-none lg:pl-10 pl-0">
                     <div class="mr-auto place-self-center lg:flex flex-col">
-                        <div class="max-w-2xl relative flex-row justify-center py-16">
+                        <div class="max-w-2xl relative flex-row justify-center lg:py-16 py-0">
                             <h1 class="lg:text-6xl md:text-4xl text-3xl font-semibold tracking-tight leading-none text-gray-800 dark:text-white">
                                 Hi, I am Fritz
                             </h1>
@@ -225,15 +225,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hidden lg:flex absolute bottom-24 left-2/6 transform ">
-                        <a href="#" class="inline-flex items-center justify-center font-medium text-center text-gray-900 dark:text-gray-200">
-                            <i class="uil uil-mouse-alt text-2xl pr-1"></i>
-                            <span class="text-base">Scroll down</span>
-                            <i class="uil uil-arrow-down text-2xl pl-1"></i>
-                        </a>
-                    </div>
                 </div>
-
+        
+                <!-- Scroll Down Indicator -->
+                <div class="hidden lg:flex absolute bottom-24 left-[300px] transform">
+                    <a href="#" class="inline-flex items-center justify-center font-medium text-center text-gray-900 dark:text-gray-200">
+                        <i class="uil uil-mouse-alt text-2xl pr-1"></i>
+                        <span class="text-base">Scroll down</span>
+                        <i class="uil uil-arrow-down text-2xl pl-1"></i>
+                    </a>
+                </div>
+        
                 <!-- Columns 9 to 13 -->
                 <div class="col-span-5 col-start-9 order-2 lg:order-none flex justify-center items-center">
                     <div class="hidden lg:flex item one">
@@ -243,9 +245,10 @@
             </div>
         </section>
         
+        
         <!--==================== ABOUT ====================-->
         <section id="about" class="h-screen flex flex-col items-center justify-center pt-[72px]">
-            <div class="text-center w-full py-16">
+            <div class="text-center w-full lg:py-16 py-8">
                 <h1 class="lg:mb-6 mb-2 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white ">
                     About Me
                 </h1>
@@ -254,10 +257,10 @@
                 </p>
             </div>
             <div class="flex-grow">
-                <div class="grid lg:grid-cols-2 items-center max-w-screen-xl py-8">
+                <div class="grid lg:grid-cols-2 items-center max-w-screen-xl lg:py-8 py-0">
                     <!-- Image Section -->
                     <div class="flex justify-center">
-                        <img src="assets/img/1.png" alt="mockup" class="border rounded-2xl shadow-2xl w-[60%] lg:w-[70%] lg:mb-0 mb-6">
+                        <img src="assets/img/1.png" alt="mockup" class="border rounded-lg shadow-2xl w-[60%] lg:w-[70%] lg:mb-0 mb-6">
                     </div>
     
                     <!-- Text and Stats Section -->
@@ -294,7 +297,7 @@
         
         <!--==================== SKILLS ====================-->
         <section id="skills" class="h-screen flex flex-col items-center justify-center pt-[72px]">
-            <div class="text-center w-full py-16">
+            <div class="text-center w-full lg:py-16 py-8">
                 <h1 class="lg:mb-6 mb-2 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white ">
                     Skills
                 </h1>
@@ -433,7 +436,7 @@
 
         <!--==================== QUALIFICATION ====================-->
         <section id="qualification" class="h-screen flex flex-col items-center justify-center pt-[72px]">
-            <div class="text-center w-full py-16">
+            <div class="text-center w-full lg:py-16 py-8">
                 <h1 class="lg:mb-6 mb-2 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white ">
                     Qualification
                 </h1>
@@ -441,7 +444,7 @@
                     My personal journey
                 </p>
             </div>
-            <div class="flex-grow w-full max-w-screen-xl mx-auto px-4">
+            <div class="flex-grow w-full max-w-screen-xl mx-auto lg:px-4 px-0">
                 <div class="flex-grow max-w-screen-4xl">
                     <div id="timeline-scroll" class="mx-auto h-[600px] overflow-y-auto px-4 scrollbar-hidden cursor-grab active:cursor-grabbing">
                         <div class="sticky top-0 z-30 flex justify-center bg-white dark:bg-gray-900 pb-8">
@@ -459,13 +462,13 @@
                             <div class="container mx-auto lg:p-10 p-0">
                                 <div class="relative wrap overflow-hidden h-full">
                                     <!-- Vertical Line -->
-                                    <div class="absolute border-l border-gray-200 dark:border-gray-700 h-full left-1/2"></div>
+                                    <div class="absolute border-l border-gray-200 dark:border-gray-700 h-full lg:left-1/2 left-3"></div>
     
                                     <!-- Timeline Item 1 (left side) -->
-                                    <div class="mb-10 flex justify-between items-center w-full">
+                                    <div class="mb-10 flex lg:flex-row flex-row-reverse justify-between items-center w-full gap-4 md:gap-0">
                                         <!-- Timeline Content -->
-                                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-5/12 lg:px-6 lg:py-4 p-2">
-                                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl lg:w-5/12 w-4/5 lg:px-6 lg:py-4 p-2">
+                                            <h3 class="mb-1 lg:text-lg text-base font-semibold text-gray-900 dark:text-white">
                                                 Web Developer
                                             </h3>
                                             <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
@@ -475,17 +478,18 @@
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </p>
                                         </div>
-                                        
+                                    
                                         <!-- Timeline Icon -->
                                         <div class="z-20 flex items-center justify-center bg-blue-100 dark:bg-blue-900 w-6 h-6 rounded-full ring-8 ring-white dark:ring-gray-900">
                                             <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                                                 <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"></path>
                                             </svg>
                                         </div>
-                                        
+                                    
                                         <!-- Empty block for right side -->
                                         <div class="hidden md:block w-5/12"></div>
                                     </div>
+                                    
     
                                     <!-- Timeline Item 2 (right side) -->
                                     <div class="mb-10 flex justify-between items-center w-full">
@@ -500,30 +504,30 @@
                                         </div>
                                         
                                         <!-- Timeline Content -->
-                                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-5/12 lg:px-6 lg:py-4 p-2">
-                                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl lg:w-5/12 w-4/5 lg:px-6 lg:py-4 p-2">
+                                            <h3 class="mb-1 lg:text-lg text-base font-semibold text-gray-900 dark:text-white">
                                                 Software Quality Assurance Engineer
                                             </h3>
                                             <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                                                 Company A, 2020 - Present
                                             </time>
-                                            <p class="text-base font-normal text-gray-400 dark:text-gray-500">
+                                            <p class="lg:text-base text-sm font-normal text-gray-400 dark:text-gray-500">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </p>
                                         </div>
                                     </div>
     
                                     <!-- Timeline Item 3 (left side) -->
-                                    <div class="mb-10 flex justify-between items-center w-full">
+                                    <div class="mb-10 flex lg:flex-row flex-row-reverse justify-between items-center w-full gap-4 md:gap-0">
                                         <!-- Timeline Content -->
-                                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-5/12 lg:px-6 lg:py-4 p-2">
-                                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl lg:w-5/12 w-4/5 lg:px-6 lg:py-4 p-2">
+                                            <h3 class="mb-1 lg:text-lg text-base font-semibold text-gray-900 dark:text-white">
                                                 Web Developer
                                             </h3>
                                             <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                                                 Company B, 2019 - 2020
                                             </time>
-                                            <p class="text-base font-normal text-gray-400 dark:text-gray-500">
+                                            <p class="lg:text-base text-sm font-normal text-gray-400 dark:text-gray-500">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </p>
                                         </div>
@@ -552,14 +556,14 @@
                                         </div>
                                         
                                         <!-- Timeline Content -->
-                                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-5/12 lg:px-6 lg:py-4 p-2">
-                                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl lg:w-5/12 w-4/5 lg:px-6 lg:py-4 p-2">
+                                            <h3 class="mb-1 lg:text-lg text-base font-semibold text-gray-900 dark:text-white">
                                                 Software Quality Assurance Engineer
                                             </h3>
                                             <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                                                 Company A, 2020 - Present
                                             </time>
-                                            <p class="text-base font-normal text-gray-400 dark:text-gray-500">
+                                            <p class="lg:text-base text-sm font-normal text-gray-400 dark:text-gray-500">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </p>
                                         </div>
@@ -572,7 +576,7 @@
                             <div class="container mx-auto lg:p-10 p-0">
                                 <div class="relative wrap overflow-hidden h-full">
                                     <!-- Vertical Line -->
-                                    <div class="absolute border-l border-gray-200 dark:border-gray-700 h-full left-1/2"></div>
+                                    <div class="absolute border-l border-gray-200 dark:border-gray-700 h-full lg:left-1/2 left-3"></div>
     
                                      <!-- Timeline Item 1 (right side) -->
                                      <div class="mb-10 flex justify-between items-center w-full">
@@ -587,30 +591,30 @@
                                         </div>
                                         
                                         <!-- Timeline Content -->
-                                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-5/12 lg:px-6 lg:py-4 p-2">
-                                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl lg:w-5/12 w-4/5 lg:px-6 lg:py-4 p-2">
+                                            <h3 class="lg:text-lg text-base font-semibold text-gray-900 dark:text-white">
                                                 Software Quality Assurance Engineer
                                             </h3>
                                             <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                                                 Company A, 2020 - Present
                                             </time>
-                                            <p class="text-base font-normal text-gray-400 dark:text-gray-500">
+                                            <p class="lg:text-base text-sm font-normal text-gray-400 dark:text-gray-500">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </p>
                                         </div>
                                     </div>
                                     
                                     <!-- Timeline Item 2 (left side) -->
-                                    <div class="mb-10 flex justify-between items-center w-full">
+                                    <div class="mb-10 flex lg:flex-row flex-row-reverse justify-between items-center w-full gap-4 md:gap-0">
                                         <!-- Timeline Content -->
-                                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-5/12 lg:px-6 lg:py-4 p-2">
-                                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl lg:w-5/12 w-4/5 lg:px-6 lg:py-4 p-2">
+                                            <h3 class="lg:text-lg text-base font-semibold text-gray-900 dark:text-white">
                                                 Web Developer
                                             </h3>
                                             <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                                                 Company B, 2019 - 2020
                                             </time>
-                                            <p class="text-base font-normal text-gray-400 dark:text-gray-500">
+                                            <p class="lg:text-base text-sm font-normal text-gray-400 dark:text-gray-500">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </p>
                                         </div>
@@ -639,14 +643,14 @@
                                         </div>
                                         
                                         <!-- Timeline Content -->
-                                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-5/12 lg:px-6 lg:py-4 p-2">
-                                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+                                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl lg:w-5/12 w-4/5 lg:px-6 lg:py-4 p-2">
+                                            <h3 class="lg:text-lg text-base font-semibold text-gray-900 dark:text-white">
                                                 Software Quality Assurance Engineer
                                             </h3>
                                             <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                                                 Company A, 2020 - Present
                                             </time>
-                                            <p class="text-base font-normal text-gray-400 dark:text-gray-500">
+                                            <p class="lg:text-base text-sm font-normal text-gray-400 dark:text-gray-500">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </p>
                                         </div>
@@ -660,8 +664,8 @@
         </section>  
 
         <!--==================== SERVICES ====================-->
-        <section id="services" class="h-screen flex flex-col items-center justify-center pt-[72px]">
-            <div class="text-center w-full py-16">
+        <section id="services" class="lg:h-screen h-full flex flex-col items-center justify-center pt-[72px]">
+            <div class="text-center w-full lg:py-16 py-8">
                 <h1 class="lg:mb-6 mb-2 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white ">
                     Services
                 </h1>
@@ -670,13 +674,166 @@
                 </p>
             </div>
             <div class="flex-grow">
-                <div class="text-9xl font-extrabold text-white">My body</div>
+                <div class="lg:max-w-5xl max-w-xs lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 gap-8">
+                    <!-- Service Card -->
+                    <div class="flex flex-col p-6 mb-8 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                        <h3 class="mb-4 text-4xl font-semibold"><i class="uil uil-web-grid"></i></h3>
+                        <p class="mb-4 font-light text-gray-500 sm:text-lg dark:text-gray-400">UI/UX Designer</p>
+
+                        <!-- List -->
+                        <ul role="list" class="mb-8 space-y-4 text-left">
+                            <li class="flex items-center lg:text-base text-sm space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>I develop the user interface.</span>
+                            </li>
+                            <li class="flex items-center lg:text-base text-sm space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Web page development.</span>
+                            </li>
+                            <li class="flex items-center lg:text-base text-sm space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>I create ux element interactions.</span>
+                            </li>
+                            <li class="flex items-center lg:text-base text-sm
+                             space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>I position your company brand.</span>
+                            </li>
+                        </ul>
+                          
+                        <button data-modal-target="send_message" data-modal-toggle="send_message" class="inline-flex items-center justify-center px-5 py-3 text-white dark:text-gray-200 rounded-lg">
+                            <span class="pr-2">Get started</span>
+                            <i class="uil uil-arrow-right text-2xl"></i>
+                        </button>   
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="flex flex-col p-6 mb-8 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                        <h3 class="mb-4 text-4xl font-semibold"><i class="uil uil-web-grid"></i></h3>
+                        <p class="mb-4 font-light text-gray-500 sm:text-lg dark:text-gray-400">UI/UX Designer</p>
+
+                        <!-- List -->
+                        <ul role="list" class="mb-8 space-y-4 text-left">
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>I develop the user interface.</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Web page development.</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>I create ux element interactions.</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>I position your company brand.</span>
+                            </li>
+                        </ul>
+                          
+                        <button data-modal-target="send_message" data-modal-toggle="send_message" class="inline-flex items-center justify-center px-5 py-3 text-white dark:text-gray-200 rounded-lg">
+                            <span class="pr-2">Get started</span>
+                            <i class="uil uil-arrow-right text-2xl"></i>
+                        </button>   
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="flex flex-col p-6 mb-8 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                        <h3 class="mb-4 text-4xl font-semibold"><i class="uil uil-web-grid"></i></h3>
+                        <p class="mb-4 font-light text-gray-500 sm:text-lg dark:text-gray-400">UI/UX Designer</p>
+
+                        <!-- List -->
+                        <ul role="list" class="mb-8 space-y-4 text-left">
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>I develop the user interface.</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Web page development.</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>I create ux element interactions.</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>I position your company brand.</span>
+                            </li>
+                        </ul>
+                          
+                        <button data-modal-target="send_message" data-modal-toggle="send_message" class="inline-flex items-center justify-center px-5 py-3 text-white dark:text-gray-200 rounded-lg">
+                            <span class="pr-2">Get started</span>
+                            <i class="uil uil-arrow-right text-2xl"></i>
+                        </button>   
+                    </div>
+                </div>
+                <!-- Main modal -->
+                <div id="send_message" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                    <div class="relative p-4 w-full max-w-2xl max-h-full">
+                        <!-- Modal content -->
+                        <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                            <!-- Modal header -->
+                            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                    Contact form
+                                </h3>
+                                <button type="button" class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="send_message">
+                                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                    </svg>
+                                    <span class="sr-only">Close modal</span>
+                                </button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="py-8 lg:p-6 px-4 mx-auto max-w-screen-md">
+                                <!-- Title and Subtitle Centered -->
+                                <!-- <div class="text-center">
+                                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Contact form</h2>
+                                </div> -->
+                                <!-- Form Left-Aligned -->
+                                <div class="text-left">
+                                    <form action="#" class="space-y-8">
+                                        <div>
+                                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                                            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                                        </div>
+                                        <div>
+                                            <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                                            <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                                        </div>
+                                        <div class="sm:col-span-2">
+                                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                                            <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                                        </div>
+                                        <div class="flex justify-end">
+                                            <button type="submit" class="border py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>  
 
         <!--==================== PORTFOLIO ====================-->
         <section id="portfolio" class="h-screen flex flex-col items-center justify-center pt-[72px]">
-            <div class="text-center w-full py-16">
+            <div class="text-center w-full lg:py-16 py-8">
                 <h1 class="lg:mb-6 mb-2 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white ">
                     Portfolio
                 </h1>
@@ -691,7 +848,7 @@
 
         <!--==================== PROJECT IN MIND ====================-->
         <section id="" class="h-screen flex flex-col items-center justify-center pt-[72px]">
-            <div class="text-center w-full py-16">
+            <div class="text-center w-full lg:py-16 py-8">
                 <h1 class="lg:mb-6 mb-2 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white ">
                     Skills
                 </h1>
@@ -706,7 +863,7 @@
 
         <!--==================== TESTIMONIAL ====================-->
         <section id="" class="h-screen flex flex-col items-center justify-center pt-[72px]">
-            <div class="text-center w-full py-16">
+            <div class="text-center w-full lg:py-16 py-8">
                 <h1 class="lg:mb-6 mb-2 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white ">
                     Skills
                 </h1>
@@ -721,7 +878,7 @@
 
         <!--==================== CONTACT ME ====================-->
         <section id="contact" class="h-screen flex flex-col items-center justify-center pt-[72px]">
-            <div class="text-center w-full py-16">
+            <div class="text-center w-full lg:py-16 py-8">
                 <h1 class="lg:mb-6 mb-2 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white ">
                     Skills
                 </h1>
