@@ -3,13 +3,15 @@
 html{
     scroll-behavior: smooth;
 }
-/* body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #000;
-} */
+
+.nav-link.active {
+    color: #5D4B9D; /* Change color for active link */
+    font-weight: bold;
+}
+
+.dark .nav-link.active {
+    color: #818cf8; /* Adjust color for active link in dark mode */
+}
 
 .item{
     width: 100%;
@@ -47,3 +49,10 @@ body {
     display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
 }
 
+.tab-link {
+    @apply px-4 py-2 rounded-lg transition-colors;
+  }
+
+  .tab-link.active {
+    @apply bg-gray-700 text-white dark:bg-gray-900 dark:text-gray-300;
+  }
