@@ -53,6 +53,6 @@ body {
     @apply px-4 py-2 rounded-lg transition-colors;
   }
 
-  .tab-link.active {
+.tab-link.active {
     @apply bg-gray-700 text-white dark:bg-gray-900 dark:text-gray-300;
-  }
+}

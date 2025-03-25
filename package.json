@@ -2,5 +2,8 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.0.12",
     "tailwindcss": "^4.0.12"
+  },
+  "devDependencies": {
+    "tailwindcss-transform": "^0.1.0"
   }
 }
