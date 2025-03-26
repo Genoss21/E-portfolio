@@ -222,6 +222,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+//Contact1
+function scrollToContact1() {
+  const contactSection = document.getElementById('contact');
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+// Add event listener to all buttons with the id 'scrollToContact1'
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollToContactBtns = document.querySelectorAll('#scrollToContact1');
+  scrollToContactBtns.forEach(btn => {
+    btn.addEventListener('click', scrollToContact1);
+  });
+});
+
 //Tabs on testimonial 
 document.addEventListener("DOMContentLoaded", function () {
   const tabs = document.querySelectorAll(".tab-link");
