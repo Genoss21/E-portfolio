@@ -230,12 +230,12 @@ function scrollToContact1() {
   }
 }
 
-// Add event listener to all buttons with the id 'scrollToContact1'
+// Add event listener to the button
 document.addEventListener('DOMContentLoaded', () => {
-  const scrollToContactBtns = document.querySelectorAll('#scrollToContact1');
-  scrollToContactBtns.forEach(btn => {
-    btn.addEventListener('click', scrollToContact1);
-  });
+  const scrollToContactBtn = document.getElementById('scrollToContact1');
+  if (scrollToContactBtn) {
+    scrollToContactBtn.addEventListener('click', scrollToContact1);
+  }
 });
 
 //Tabs on testimonial 
