@@ -230,12 +230,12 @@ function scrollToContact1() {
   }
 }
 
-// Add event listener to all buttons with the id 'scrollToContact1'
+// Add event listener to the button
 document.addEventListener('DOMContentLoaded', () => {
-  const scrollToContactBtns = document.querySelectorAll('#scrollToContact1');
-  scrollToContactBtns.forEach(btn => {
-    btn.addEventListener('click', scrollToContact1);
-  });
+  const scrollToContactBtn = document.getElementById('scrollToContact1');
+  if (scrollToContactBtn) {
+    scrollToContactBtn.addEventListener('click', scrollToContact1);
+  }
 });
 
 //Tabs on testimonial 
@@ -245,32 +245,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const tabData = {
       profile: {
-          title: "Profile Tab",
-          content: "This is some placeholder content for the Profile tab."
+          title: "Client 1",
+          content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatum aliquid earum atque accusamus iusto."
       },
       dashboard: {
-          title: "Dashboard Tab",
-          content: "This is the Dashboard tab content. Here you can see your overview."
+          title: "Client 2",
+          content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quod."
       },
       settings: {
-          title: "Settings Tab",
-          content: "Manage your application settings from this tab."
+          title: "Client 3",
+          content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veniam aut error reiciendis molestiae quas."
       }
   };
 
   function setActiveTab(tab) {
-      tabs.forEach(t => t.classList.remove("active"));
-      tab.classList.add("active");
+      tabs.forEach(t => {
+          t.classList.remove("active", "bg-gray-200", "dark:bg-gray-700");
+      });
+      tab.classList.add("active", "bg-gray-200", "dark:bg-gray-700");
   }
 
   function updateContent(tabKey) {
       content.innerHTML = `
-          <span>
-              <svg class="lg:w-[36px] lg:h-[36px] w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+           <span>
+              <svg class="lg:w-[36px] lg:h-[36px] w-5 h-5 text-gray-800 dark:text-white lg:mb-4 mb-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                   <path fill-rule="evenodd" d="M6 6a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a3 3 0 0 1-3 3H5a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2H6Zm9 0a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a3 3 0 0 1-3 3h-1a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2h-3Z" clip-rule="evenodd"/>
               </svg>
           </span>
-          <h1 class="lg:text-2xl text-lg font-semibold text-white">${tabData[tabKey].title}</h1>
+          <h1 class="lg:text-2xl text-lg font-semibold text-[#171824] dark:text-white lg:pb-4 pb-2">${tabData[tabKey].title}</h1>
           <p class="lg:text-lg text-sm text-gray-400">${tabData[tabKey].content}</p>
       `;
   }
