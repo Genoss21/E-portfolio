@@ -167,13 +167,13 @@ function showTab(tab) {
 showTab('education');
 
 // Show or hide the scroll-to-top button based on scroll position
-window.addEventListener('scroll', function () {
+function updateScrollToTopButton() {
   const scrollToTopBtn = document.getElementById('scrollToTopBtn');
   const aboutSection = document.getElementById('about');
 
-  if (!aboutSection) return; // Prevent errors if 'about' section is missing
+  if (!aboutSection || !scrollToTopBtn) return; // Prevent errors if elements are missing
 
-  const aboutTop = aboutSection.offsetTop;
+  const aboutTop = aboutSection.getBoundingClientRect().top + window.scrollY;
   const scrollPosition = window.scrollY;
 
   if (scrollPosition >= aboutTop) {
@@ -183,7 +183,19 @@ window.addEventListener('scroll', function () {
     scrollToTopBtn.classList.add('hidden', 'translate-y-10', 'opacity-0');
     scrollToTopBtn.classList.remove('translate-y-0', 'opacity-100');
   }
+}
+
+// Ensure button is hidden initially
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+  if (scrollToTopBtn) {
+    scrollToTopBtn.classList.add('hidden', 'translate-y-10', 'opacity-0');
+  }
+  updateScrollToTopButton();
 });
+
+// Update button visibility on scroll
+window.addEventListener('scroll', updateScrollToTopButton);
 
 // Function to scroll to the top of the page
 function scrollToTop() {
