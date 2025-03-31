@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assets/css/input.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+<?php include '../includes/header.php'; ?>
+<body class="bg-[#F3F4F6] dark:bg-[#171824]">
+    <!--======= NAVBAR =======-->
+    <?php include '../pages/navbar.php'; ?>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        // Apply dark mode before the page loads to prevent flickering
-        if (localStorage.getItem("darkMode") === "enabled") {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-        }
-    </script>
-
-    <title><?php echo "Document"; ?></title>
-</head>
-<body class="bg-white dark:bg-gray-900">
-    <!--======= HEADER =======-->
-    <?php include 'header.php'; ?>
-
-    <main>
+    <main class="items-center justify-between mx-auto">
         <!--======= HOME =======-->
-        <?php include 'home.php'; ?>
+        <?php include '../pages/home.php'; ?>
         <!--======= ABOUT =======-->
-        <?php include 'about.php'; ?>
+        <?php include '../pages/about.php'; ?>
+        <!--======= SKILLS =======-->
+        <?php include '../pages/skills.php'; ?>
+        <!--======= QUALIFICATION =======-->
+        <?php include '../pages/qualification.php'; ?>
+        <!--======= SERVICES =======-->
+        <?php include '../pages/services.php'; ?>
+        <!--======= PORTFOLIO =======-->
+        <?php include '../pages/portfolio.php'; ?>
+        <!--======= PROJECT IN MIND =======-->
+        <?php include '../pages/project_in_mind.php'; ?>
+        <!--======= TESTIMONIAL =======-->
+        <?php include '../pages/testimonials.php'; ?>
+        <!--======= CONTACT ME =======-->
+        <?php include '../pages/contact.php'; ?>
     </main>
     
     <!--======= FOOTER =======-->
+    <?php include '../includes/footer.php'; ?> 
     
-
-    <script src="assets/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 </html>
