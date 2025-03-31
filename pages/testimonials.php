@@ -18,7 +18,7 @@
                             <li>
                                 <a href="#" class="tab-link w-full flex flex-col lg:p-4 p-2 rounded-lg text-gray-700 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" data-tab="profile">
                                     <div class="flex items-center mb-2">
-                                        <img class="w-10 h-10 rounded-full" src="../assets/img/user.jpg" alt="Profile">
+                                        <img class="w-10 h-10 rounded-full" src="./assets/img/user.jpg" alt="Profile">
                                         <p class="text-lg md:text-xl font-medium ml-2.5">Client 1</p>
                                     </div>
                                     <div class="text-sm md:text-base text-gray-500 dark:text-gray-400">Web development</div>
@@ -27,7 +27,7 @@
                             <li>
                                 <a href="#" class="tab-link w-full flex flex-col lg:p-4 p-2 rounded-lg text-gray-700 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" data-tab="dashboard">
                                     <div class="flex items-center mb-2">
-                                        <img class="w-10 h-10 rounded-full" src="../assets/img/user.jpg" alt="Dashboard">
+                                        <img class="w-10 h-10 rounded-full" src="./assets/img/user.jpg" alt="Dashboard">
                                         <p class="text-lg md:text-xl font-medium ml-2.5">Client 2</p>
                                     </div>
                                     <div class="text-sm md:text-base text-gray-500 dark:text-gray-400">UI/UX Design</div>
@@ -36,7 +36,7 @@
                             <li>
                                 <a href="#" class="tab-link w-full flex flex-col lg:p-4 p-2 rounded-lg text-gray-700 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" data-tab="settings">
                                     <div class="flex items-center mb-2">
-                                        <img class="w-10 h-10 rounded-full" src="../assets/img/user.jpg" alt="Settings">
+                                        <img class="w-10 h-10 rounded-full" src="./assets/img/user.jpg" alt="Settings">
                                         <p class="text-lg md:text-xl font-medium ml-2.5">Client 3</p>
                                     </div>
                                     <div class="text-sm md:text-base text-gray-500 dark:text-gray-400">Web development</div>

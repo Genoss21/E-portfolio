@@ -17,7 +17,7 @@
                     </a>
                 </div>
                 <div class="sm:hidden absolute top-0 left-[75px] w-[250px] h-auto justify-center item one">
-                    <img src="../assets/img/Pic1.jpg" alt="" class="object-cover w-[90%] h-auto">
+                    <img src="./assets/img/Pic1.jpg" alt="" class="object-cover w-[90%] h-auto">
                 </div>
             </div>
         </div> <!-- Missing closing div added here -->
@@ -64,7 +64,7 @@
         <!-- Columns 9 to 13 -->
         <div class="col-span-5 col-start-9 order-2 lg:order-none flex justify-center items-center hidden sm:flex">
             <div id="fade-in-element" class="lg:flex item one opacity-0 scale-90 transition-all duration-1000 ease-in-out">
-                <img src="../assets/img/Pic1.jpg" alt="" class="object-cover shadow-2xl">
+                <img src="./assets/img/Pic1.jpg" alt="" class="object-cover shadow-2xl">
             </div>
         </div>
     </div>

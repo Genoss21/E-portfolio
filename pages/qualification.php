@@ -33,7 +33,7 @@
                                     <div class="mb-6 p-4 flex lg:flex-row flex-row-reverse justify-between items-center w-full gap-4 md:gap-0">
                                         <!-- Timeline Content -->
                                         <div class="flex lg:flex-row flex-col justify-baseline items-center bg-gray-50 dark:bg-gray-800 rounded-lg shadow-xl lg:w-5/12 w-4/5 lg:px-6 lg:py-4 p-2 transform transition-transform duration-300 hover:scale-105">
-                                            <img class="h-20 w-20 lg:my-0 my-2" src="../assets/img/Jose_Rizal_University_seal.svg.png" alt="">
+                                            <img class="h-20 w-20 lg:my-0 my-2" src="./assets/img/Jose_Rizal_University_seal.svg.png" alt="">
                                             <div class="flex-row pl-4">
                                                 <h1 class="mb-1 lg:text-lg text-base font-semibold text-gray-900 dark:text-white">
                                                     José Rizal University
@@ -73,7 +73,7 @@
                                         
                                         <!-- Timeline Content -->
                                         <div class="flex lg:flex-row flex-col justify-baseline items-center bg-gray-50 dark:bg-gray-800 rounded-lg shadow-xl lg:w-5/12 w-4/5 lg:px-6 lg:py-4 p-2 transform transition-transform duration-300 hover:scale-105">
-                                            <img class="h-20 w-20 lg:my-0 my-2" src="../assets/img/SAIS.jpg" alt="">
+                                            <img class="h-20 w-20 lg:my-0 my-2" src="./assets/img/SAIS.jpg" alt="">
                                             <div class="flex-row pl-4">
                                                 <h1 class="mb-1 lg:text-lg text-base font-semibold text-gray-900 dark:text-white">
                                                     Sumoroy Agro Industrial School (SAIS)
@@ -92,7 +92,7 @@
                                     <div class="mb-6 p-4 flex lg:flex-row flex-row-reverse justify-between items-center w-full gap-4 md:gap-0">
                                         <!-- Timeline Content -->
                                         <div class="flex lg:flex-row flex-col justify-baseline items-center bg-gray-50 dark:bg-gray-800 rounded-lg shadow-xl lg:w-5/12 w-4/5 lg:px-6 lg:py-4 p-2 transform transition-transform duration-300 hover:scale-105">
-                                            <img class="h-20 w-20 lg:my-0 my-2" src="../assets/img/Central.jpg" alt="">
+                                            <img class="h-20 w-20 lg:my-0 my-2" src="./assets/img/Central.jpg" alt="">
                                             <div class="flex-row pl-4">
                                                 <h1 class="mb-1 lg:text-lg text-base font-semibold text-gray-900 dark:text-white">
                                                     Palapag I Central ES 
@@ -159,7 +159,7 @@
                                     <div class="mb-6 p-4 flex lg:flex-row flex-row-reverse justify-between items-center w-full gap-4 md:gap-0">
                                         <!-- Timeline Content -->
                                         <div class="flex lg:flex-row flex-col justify-baseline items-center bg-gray-50 dark:bg-gray-800 rounded-lg shadow-xl lg:w-5/12 w-4/5 lg:px-6 lg:py-4 p-2 transform transition-transform duration-300 hover:scale-105">
-                                            <img class="h-20 w-20 lg:my-0 my-2" src="../assets/img/Jose_Rizal_University_seal.svg.png" alt="">
+                                            <img class="h-20 w-20 lg:my-0 my-2" src="./assets/img/Jose_Rizal_University_seal.svg.png" alt="">
                                             <div class="flex-row pl-4">
                                                 <h1 class="mb-1 lg:text-lg text-base font-semibold text-gray-900 dark:text-white">
                                                     José Rizal University
@@ -198,7 +198,7 @@
                                         
                                         <!-- Timeline Content -->
                                         <div class="flex lg:flex-row flex-col justify-baseline items-center bg-gray-50 dark:bg-gray-800 rounded-lg shadow-xl lg:w-5/12 w-4/5 lg:px-6 lg:py-4 p-2 transform transition-transform duration-300 hover:scale-105">
-                                            <img class="h-4 w-20 lg:my-0 my-4" src="../assets/img/miyens-logo-black.jpg" alt="">
+                                            <img class="h-4 w-20 lg:my-0 my-4" src="./assets/img/miyens-logo-black.jpg" alt="">
                                             <div class="flex-row pl-4">
                                                 <h1 class="mb-1 lg:text-lg text-base font-semibold text-gray-900 dark:text-white">
                                                     Miyens Technologies(OJT)

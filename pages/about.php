@@ -14,7 +14,7 @@
         <div class="grid lg:grid-cols-2 items-center max-w-screen-xl lg:py-8 py-0">
             <!-- Image Section -->
             <div class="flex justify-center">
-                <img src="../assets/img/Pic2.jpg" alt="mockup" class="rounded-lg shadow-2xl w-[50%] lg:w-[70%] lg:mb-0 mb-6 transform transition-transform duration-300 hover:scale-105 hover:rotate-6">
+                <img src="./assets/img/Pic2.jpg" alt="mockup" class="rounded-lg shadow-2xl w-[50%] lg:w-[70%] lg:mb-0 mb-6 transform transition-transform duration-300 hover:scale-105 hover:rotate-6">
             </div>
 
             <!-- Text and Stats Section -->

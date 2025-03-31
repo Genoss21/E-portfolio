@@ -29,7 +29,7 @@
                                 <div class="flex lg:flex-row flex-col w-full h-full items-center justify-center lg:space-x-4 space-x-0">
                                     <!-- Image Section (Larger) -->
                                     <div class="lg:w-[50%] w-full h-auto lg:p-4 py-16 transform transition-transform duration-300 hover:scale-110 z-10">
-                                        <img src="../assets/img/E-portfolio.jpg"
+                                        <img src="./assets/img/E-portfolio.jpg"
                                             class="w-full h-full object-contain rounded-lg drop-shadow-lg" alt="First Slide">
                                     </div>
 
@@ -64,7 +64,7 @@
                                 <div class="flex lg:flex-row flex-col w-full h-full items-center justify-center lg:space-x-4 space-x-0">
                                     <!-- Image Section (Larger) -->
                                     <div class="lg:w-[50%] w-full h-auto lg:p-4 py-16 transform transition-transform duration-300 hover:scale-110 z-10">
-                                        <img src="../assets/img/Twitter_clone.jpg"
+                                        <img src="./assets/img/Twitter_clone.jpg"
                                             class="w-full h-full object-contain rounded-lg drop-shadow-lg" alt="First Slide">
                                     </div>
 
@@ -99,7 +99,7 @@
                                 <div class="flex lg:flex-row flex-col w-full h-full items-center justify-center lg:space-x-4 space-x-0">
                                     <!-- Image Section (Larger) -->
                                     <div class="lg:w-[50%] w-full h-auto lg:p-4 py-16 transform transition-transform duration-300 hover:scale-110 z-10">
-                                        <img src="../assets/img/WFH_DTR.jpg"
+                                        <img src="./assets/img/WFH_DTR.jpg"
                                             class="w-full h-full object-contain rounded-2xl drop-shadow-lg" alt="First Slide">
                                     </div>
 

@@ -33,7 +33,7 @@
     <i class="uil uil-arrow-up text-xl"></i>
     </button>
 
-    <script src="../assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 
