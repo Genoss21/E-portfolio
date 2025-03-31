@@ -20,6 +20,6 @@
       </script>
 
     
-    <title>Fritz Jerome Tobes</title>
+    <title>FritzJeromeTobes</title>
 </head>
 
