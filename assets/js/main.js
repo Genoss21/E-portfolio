@@ -272,9 +272,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function setActiveTab(tab) {
       tabs.forEach(t => {
-          t.classList.remove("active", "bg-gray-200", "dark:bg-gray-700");
+          t.classList.remove("active", "bg-[#F3F4F6]", "dark:bg-gray-800", "shadow-lg");
       });
-      tab.classList.add("active", "bg-gray-200", "dark:bg-gray-700");
+      tab.classList.add("active", "bg-[#F3F4F6]", "dark:bg-gray-800", "shadow-lg");
   }
 
   function updateContent(tabKey) {
@@ -396,3 +396,4 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("about").scrollIntoView({ behavior: "smooth" });
   });
 });
+
